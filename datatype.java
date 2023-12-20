@@ -10,3 +10,5 @@ f.boolean (1 byte)
 g.short (2 byte)
 h.byte (1 byte)
                                                                         */
+
+//Note:- PRIMITIVE datatype are already defined in the programming languages where as NON-PRIMITIVE datatypes need to be defined by the programmer!
