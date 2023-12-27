@@ -25,7 +25,7 @@
 //         }
 //         else if(operator=='/'){
 //             if(b==0){
-//                 System.out.print("Can't divisible by 0!");
+//                 System.out.print("Can't divisible by 0!");                   //here, we have to check the condition of 'not defined'!
 //                 return;
 //             }
 //             result = a/b;
