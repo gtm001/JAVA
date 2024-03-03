@@ -8,6 +8,7 @@
 // 2. All methods are public and abstract bydefault.
 // 3. A class that implements an interface must implement all the methods declared in the interface.
 // 4. interfaces support the functionality of multiple inheritance.
+// 5. Interfaces can't be initialised.
 
 // Note:- Here,In JAVA Multiple Inheritance can only be done through Interfaces It'll not possible with Inheritance.
 
