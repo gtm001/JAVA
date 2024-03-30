@@ -1,70 +1,86 @@
-
-// this is mutable.
-// import java.util.Date; // library to deal with date and time in java.
+// import java.time.LocalDate;
 // class DateTime{
 //     public static void main(String args[]){
-//         // System.out.println(System.currentTimeMillis()); // return total sec until now since 1970 in Milli sec.
-//         Date d = new Date();
-//         System.out.println(d); // gives current date and time.
-//         System.out.println(d.getTime()); // give time in milisecond.
-//         System.out.println(d.getDate()); // give today's date.
-//         System.out.println(d.getSeconds()); // give current second of the hour.
-//         System.out.println(d.getHours()); // give current hour.
-//         System.out.println(d.getYear()); // count of year after 1900.
+//         LocalDate date = LocalDate.now();
+//         System.out.println("Today date is:- "+date);
+//         LocalDate yesterday = date.minusDays(2);
+//         System.out.println("Yesterday's date :- "+yesterday);
+//         LocalDate tommrow = date.plusDays(1);
+//         System.out.println("Tommrow's date is :- "+tommrow);
+
+//         System.out.println(date.getYear());
+//         System.out.println(date.getMonth());
+//         System.out.println(date.getMonthValue());
+//         System.out.println(date.isLeapYear());
+//         System.out.println(date.getDayOfMonth());
+//         System.out.println(date.plusMonths(2));
+
+//         LocalDate date1 = LocalDate.of(2024,4,10);
+//         System.out.println(date1.getDayOfWeek());
+//         System.out.println(date1.lengthOfYear());
+//         System.out.println(date1.lengthOfMonth());
+//         System.out.println(date1.getDayOfYear());
+
+//         String str = "2026-05-24";
+//         LocalDate date2 = LocalDate.parse(str);
+//         System.out.println("Using parse method:-"+date2);
 
 //     }
 // }
 
-// -----------Local time------------------------
+// ------------------------------------
 // import java.time.*;
+// import java.time.LocalTime;
 // class DateTime{
 //     public static void main(String args[]){
-//         // LocalDate ld = LocalDate.now();
-//         // System.out.println(ld);
+//         LocalTime time1 = LocalTime.of(10,50,25);
+//         System.out.println(time1);
 
-//         // Scanner sc = new Scanner(System.in);
-//         LocalDate ld = LocalDate.of(2021,3,1);
-//         // System.out.println(ld);
+//         LocalTime time2 = LocalTime.now();
+//         System.out.println(time2);
+//         System.out.println(time2.getHour());
+//         System.out.println(time2.getMinute());
+//         System.out.println(time2.getSecond());
+//         System.out.println(time2.getNano());
 
-//         // LocalTime lt = LocalTime.now();
-//         LocalTime lt = LocalTime.of(02,1);
-//         // System.out.println(ld);
+//         LocalTime time3 = time2.minusHours(2);
+//         System.out.println(time3);
+//         LocalTime time4 = time2.minusMinutes(23);
+//         System.out.println(time4);
+//         System.out.println(time1.plusHours(2));
+//         System.out.println(time1.plusMinutes(12));
 
-//         // LocalDateTime ldt = LocalDateTime.of(ld,lt);
-//         // System.out.println(ldt);
-
+//         ZoneId zone = ZoneId.of("Asia/Kolkata");
+//         LocalTime lt = LocalTime.now(zone);
+//         System.out.println(lt);
 //     }
 // }
 
-//-----------------DateTimeFormatter-------------------
-// import java.util.*;
+// ------------------------------------------------------------------
 // import java.time.*;
+// import java.time.LocalDateTime;
 // import java.time.format.DateTimeFormatter;
+
 // class DateTime{
 //     public static void main(String args[]){
-//         Scanner sc = new Scanner(System.in);
-//         int n1 = sc.nextInt();
-//         int n2 = sc.nextInt();
-//         int n3 = sc.nextInt();
-//         LocalDate dt = LocalDate.of(n1,n2,n3);
-//         // LocalDate dt = LocalDate.of(2010,07,2);
-//         DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-//         String date = dt.format(df);
-//         String month = dt.getMonth().name();
-//         System.out.println(date);
-//         System.out.println(month);
+//         LocalDateTime now = LocalDateTime.now();
+//         System.out.println("Before Formatting:- "+now);
+//         System.out.println(now.plusDays(100));
+//         System.out.println(now.minusDays(50));
+
+//         DateTimeFormatter df = DateTimeFormatter.ofPattern("dd-MM-yyyy mm:HH:ss");
+//         String formatDateTime = now.format(df);
+//         System.out.println("After formatting :- "+formatDateTime);
 //     }
 // }
 
-// ----------questions--------------------
-// use date class to print 21:32:45.
-import java.time.*;
-class DateTime{
-    public static void main(String args[]){
-        LocalTime lt = LocalTime.of(21,32,45);
-        System.out.println(lt);
-
-    }
-}
-
- 
+// ----------------------------------------------------------------------
+// import java.time.*;
+// class DateTime{
+//     public static void main(String args[]){
+//         LocalDateTime ldt = LocalDateTime.of(2024,Month.MARCH,29,16,52);
+//         ZonedDateTime zone = ZonedDateTime.now();
+//         System.out.println(zone.getZone());
+//     }
+// }
+// ------------------------------------------------------------------------
