@@ -153,7 +153,7 @@
 // // catch(Exception e){
 // // e.printStackTrace();}}}
 
-// // --------------------writing using FileInputStream----------------------------------------------------------
+// // --------------------reading using FileInputStream----------------------------------------------------------
 // import java.io.FileInputStream;
 // class FileHand {
 // public static void main(String args[]) {
@@ -178,7 +178,7 @@
 // }
 // }}
 
-// ------------------reading using FileOutputStream-------------------------
+// ------------------writing using FileOutputStream-------------------------
 // import java.io.FileOutputStream;
 // class FileHand {
 // public static void main(String args[]) {
